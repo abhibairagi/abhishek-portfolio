@@ -79,8 +79,8 @@ export const Projects = () => {
                                             </a>
                                         </div>
                                     </div>
-                                    <a className="carousel-control prev" onClick={() => moveCarousel(-1)} >&#10094;</a>
-                                    <a className="carousel-control next" onClick={() => moveCarousel(1)}>&#10095;</a>
+                                    <a href={() => false} className="carousel-control prev" onClick={() => moveCarousel(-1)} >&#10094;</a>
+                                    <a href={() => false} className="carousel-control next" onClick={() => moveCarousel(1)}>&#10095;</a>
                                 </div>
                             </div>
                             <div className="project_information">
@@ -100,14 +100,8 @@ export const Projects = () => {
                                     <SiVuetify />
                                     <SiRedis />
                                 </div>
-                                {/* <div>
-                                    <a href="https://drive-system.herokuapp.com/user/" target="_blank" rel="noreferrer" disable>
-                                        <span type="button" className="btns onbt onbt">URL for the API</span>
-                                    </a>
-                                    <a href="https://github.com/imbickydutta/file-system-backend" target="_blank" rel="noreferrer">
-                                        <span type="button" className="btns onbt">View Code</span>
-                                    </a>
-                                </div> */}
+                                <div>
+                                </div>
                             </div>
                         </div>
                     </div>
