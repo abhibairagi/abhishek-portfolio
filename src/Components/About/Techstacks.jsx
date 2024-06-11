@@ -3,7 +3,7 @@ import "./Techstacks.css"
 import { FaReact, FaNodeJs, FaAws, FaVuejs, FaAngular  } from "react-icons/fa";
 import {
     SiHtml5,
-    SiMaterialui,
+    SiMui,
     SiExpress,
     SiRedis,
     SiVuetify,
@@ -69,7 +69,7 @@ export const Techstacks = () => {
                         <h5>Vuetify</h5>
                     </div>
                     <div>
-                        <SiMaterialui />
+                        <SiMui />
                         <h5>Material UI</h5>
                     </div>
                     <div>
