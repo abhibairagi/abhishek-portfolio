@@ -8,7 +8,7 @@ export const Footer = () => {
     return (
         <>
             <div className={"section " + themename}>
-                <a href="" rel="noreferrer" target="_blank">
+                <a href="/" rel="noreferrer" target="_blank">
                     <div className="footerBox">
                         {/* <h3 className="footer"> Made with{" "} <span style={{ color: `red`, background: `transparent` }}>❤</span>{" "} By Fahad </h3> */}
                     </div>
