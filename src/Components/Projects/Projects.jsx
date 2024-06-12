@@ -20,6 +20,7 @@ import InsuranceRequests from "../../assets/Insurance/insurance_requests.png"
 import InsuranceCycles from "../../assets/Insurance/insurance_cycles.png"
 import InsuranceCategories from "../../assets/Insurance/insurance_categories.png"
 import InsuranceProviders from "../../assets/Insurance/insurance_providers.png"
+import WeatherForecastDashboard from "../../assets/Weather Forecast/weather_forecast_dashboard.png"
 
 export const Projects = () => {
 
@@ -43,7 +44,7 @@ export const Projects = () => {
             <div className="section">
                 <h2 className="section__title different">Projects</h2>
                 <div className="allProjects">
-                <div className="projects_container" data-aos="fade-right">
+                    <div className="projects_container" data-aos="fade-right">
                         <div className="project">
                             <div className="project_videocontainer">
                                 <div className="carousel">
@@ -127,6 +128,33 @@ export const Projects = () => {
                                         <span type="button" className="btns onbt onbt">See this Live</span>
                                     </a>
                                     <a href="https://github.com/fahad065/Netflix-Clone-Using-React-JS" target="_blank" rel="noreferrer">
+                                        <span type="button" className="btns onbt">View Code</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="projects_container" data-aos="fade-right">
+                        <div className="project">
+                            <div className="project_videocontainer">
+                                <div>
+                                    <img src={WeatherForecastDashboard} alt="Weather Forecast Dashboard" />
+                                </div>
+                            </div>
+                            <div className="project_information">
+                                <h2>Weather Forecast - ReactJs</h2>
+                                <p>
+                                    This project "Weather Forecast" is created using ReactJs technology and currently I am getting response based on country wise from open source OpenWeather API and it will show data for upto next 6 days.
+                                </p>
+                                <div>
+                                    <FaReact />
+                                    <SiBootstrap />
+                                </div>
+                                <div>
+                                    <a href="https://fahad065-weather-app-react.netlify.app/" target="_blank" rel="noreferrer">
+                                        <span type="button" className="btns onbt">See this Live</span>
+                                    </a>
+                                    <a href="https://github.com/fahad065/weather-forecast-app-reactjs" target="_blank" rel="noreferrer">
                                         <span type="button" className="btns onbt">View Code</span>
                                     </a>
                                 </div>
