@@ -9,8 +9,14 @@ import TwitterIcon from "@material-ui/icons/Twitter";
 import { Introduction } from "./Introduction";
 import { Timeline } from "./Timeline";
 import { Techstacks } from "./Techstacks";
-
+import FahadCV from "../../assets/pdf/Fahad CV.pdf"
 export const About = () => {
+    
+    const openResume = () => {
+        const url = FahadCV
+        window.open(url, "_blank");
+    }
+
     return (
         <>
             <div className="about center">
@@ -38,7 +44,7 @@ export const About = () => {
                         <TwitterIcon />
                     </a>
                 </div>
-                <button className="btnResume" onClick={() => { window.open("https://www.canva.com/design/DAGHMoRSex4/k1ofoRNWHOGUf6a55TcODA/view"); }}>Resume</button>
+                <button className="btnResume" onClick={openResume}>Resume</button>
             </div>
             <Introduction />
             <Timeline />
