@@ -5,6 +5,7 @@ import Brightness2Icon from "@material-ui/icons/Brightness2";
 import WbSunnyRoundedIcon from "@material-ui/icons/WbSunnyRounded";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
+import FahadCV from "../../assets/pdf/Fahad CV.pdf"
 
 export const Navbar = () => {
     const [{ themename, toggeltheme }] = React.useContext(ThemeContext);
@@ -38,7 +39,7 @@ export const Navbar = () => {
                         <a href="#contact" onClick={() => toggleNavList("#contact")} className="link link--nav">Contact</a>
                     </li>
                     <li className="nav__list-item">
-                        <a href="https://www.canva.com/design/DAGHMoRSex4/k1ofoRNWHOGUf6a55TcODA/view?utm_content=DAGHMoRSex4&utm_campaign=designshare&utm_medium=link&utm_source=editor" onClick={toggleNavList} className="link link--nav" target="_blank" rel="noreferrer">Resume</a>
+                        <a href={FahadCV} onClick={toggleNavList} className="link link--nav" target="_blank" rel="noreferrer">Resume</a>
                     </li>
                 </ul>
                 <button type="button" onClick={toggeltheme} className="btn btn--icon nav__theme" aria-label="toggle theme" style={{ backgroundColor: "inherit" }}>
