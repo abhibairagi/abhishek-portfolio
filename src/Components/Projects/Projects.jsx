@@ -11,7 +11,6 @@ import {
   SiNodedotjs,
   SiApachekafka,
   SiSocketdotio,
-  SiAngular,
   SiDocker,
 } from "react-icons/si";
 import NetFlixDashboard from "../../assets/Netflix/netflix_dashboard.png";
@@ -20,8 +19,8 @@ import Covid19Dashboard from "../../assets/Covid19/covid19_dashboard.png";
 import STT from "../../assets/event-driven/STT.png";
 import TTS from "../../assets/event-driven/TTS.png";
 import History from "../../assets/event-driven/history.png";
-
-import WeatherForecastDashboard from "../../assets/Weather Forecast/weather_forecast_dashboard.png";
+import Architecture from "../../assets/event-driven/architecture.png";
+import Preview from "../../assets/live-editor/preview.png";
 
 export const Projects = () => {
   let [currentSlide] = useState(0);
@@ -52,13 +51,22 @@ export const Projects = () => {
                 <div className="carousel">
                   <div className="carousel-inner">
                     <div className="carousel-item active">
+                      <a
+                        href={Architecture}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img src={Architecture} alt="Architecture" />
+                      </a>
+                    </div>
+                    <div className="carousel-item">
                       <a href={TTS} target="_blank" rel="noopener noreferrer">
-                        <img src={TTS} alt="Insurance Dashboard" />
+                        <img src={TTS} alt="TTS" />
                       </a>
                     </div>
                     <div className="carousel-item">
                       <a href={STT} target="_blank" rel="noopener noreferrer">
-                        <img src={STT} alt="Insurance Providers" />
+                        <img src={STT} alt="STT" />
                       </a>
                     </div>
                     <div className="carousel-item">
@@ -127,28 +135,32 @@ export const Projects = () => {
             <div className="project">
               <div className="project_videocontainer">
                 <div>
-                  <img src={NetFlixDashboard} alt="Netflix Dashboard" />
+                  <img src={Preview} alt="TTS" />
                 </div>
               </div>
               <div className="project_information">
-                <h2>Netflix Clone - MERN Stack</h2>
+                <h2>Live Editor</h2>
                 <p>
-                  This project "Netflix Clone" is created using
-                  MERN(ReactJs,ExpressJs,NodeJs,MongoDB) stack technology and
-                  currently I am displaying all the movie content using Netflix
-                  API. Whenever user clicks on any movie/series thumbnail, I am
-                  playing respective trailer.
+                  I developed a real-time live text editor using the MERN stack,
+                  integrated with WebSocket for seamless collaboration. The
+                  editor allows multiple users to edit text simultaneously while
+                  displaying the cursor and mouse drag movements of other users
+                  in real time. This feature enhances collaborative efforts by
+                  providing instant visual feedback on what others are working
+                  on. The application ensures a smooth and responsive
+                  experience, making it ideal for team-based projects where
+                  real-time collaboration is essential
                 </p>
                 <div>
                   <FaReact />
                   <SiNodedotjs />
                   <SiExpress />
                   <SiMongodb />
-                  <SiBootstrap />
+                  <SiSocketdotio />
                 </div>
                 <div>
                   <a
-                    href="https://netflix-clone-f870e.web.app/"
+                    href="https://editor-frontend-ruddy.vercel.app/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -157,7 +169,7 @@ export const Projects = () => {
                     </span>
                   </a>
                   <a
-                    href="https://github.com/fahad065/Netflix-Clone-Using-React-JS"
+                    href="https://github.com/abhibairagi/Editor-frontend"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -169,7 +181,7 @@ export const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="projects_container" data-aos="fade-right">
+          {/* <div className="projects_container" data-aos="fade-right">
             <div className="project">
               <div className="project_videocontainer">
                 <div>
@@ -213,8 +225,8 @@ export const Projects = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="projects_container" data-aos="fade-right">
+          </div> */}
+          {/* <div className="projects_container" data-aos="fade-right">
             <div className="project">
               <div className="project_videocontainer">
                 <div>
@@ -259,8 +271,8 @@ export const Projects = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="projects_container" data-aos="fade-right">
+          </div> */}
+          {/* <div className="projects_container" data-aos="fade-right">
             <div className="project">
               <div className="project_videocontainer">
                 <div>
@@ -302,7 +314,7 @@ export const Projects = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

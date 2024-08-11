@@ -13,7 +13,7 @@ import Abhishek from "../../assets/pdf/Fahad CV.pdf";
 export const About = () => {
   const openResume = () => {
     window.open(
-      "https://drive.google.com/drive/u/0/folders/1GwJGkrpqLQKUirWePCG3uT5j3o9YvT__",
+      "https://drive.google.com/file/d/1Drr9to6N6O5V9R5Ks_BEFIx3sjUPnrN8/view",
       "_blank"
     );
   };
